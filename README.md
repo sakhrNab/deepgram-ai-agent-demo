@@ -23,6 +23,7 @@ Check out our [KNOWN ISSUES](./KNOWN_ISSUES.md) before reporting.
 - Capture streaming audio using [Deepgram Streaming Speech to Text](https://developers.deepgram.com/docs/getting-started-with-live-streaming-audio).
 - Natural Language responses using an OpenAI LLM.
 - Speech to Text conversion using [Deepgram Aura Text to Speech](https://developers.deepgram.com/docs/text-to-speech).
+- Twilio webhook integration for voice calls (instead of using the record button in UI).
 
 ## What is Deepgram?
 
@@ -71,6 +72,19 @@ Once running, you can [access the application in your browser](http://localhost:
 ```bash
 npm run dev
 ```
+
+## Twilio Integration
+
+This demo now includes a Twilio webhook integration, allowing you to interact with the Deepgram AI Agent via voice calls instead of using the record button in the UI.
+
+### Setting up Twilio
+
+1. Create a Twilio account and get a phone number
+2. Configure your Twilio phone number to use the webhook URL: `/api/twilio-webhook`
+3. Make sure your application is accessible from the internet (e.g., deployed on Replit or another hosting service)
+4. Call your Twilio phone number to interact with the Deepgram AI Agent
+
+For detailed setup instructions, see the [Replit Deployment Guide](./REPLIT_DEPLOYMENT.md).
 
 ## Getting Help
 
